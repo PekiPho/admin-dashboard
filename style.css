@@ -13,7 +13,13 @@ body {
 }
 
 input {
+  all: unset;
   background-color: #dcdcdc;
+  padding-left: 8px;
+  font-size: 20px;
+  border-radius: 30px;
+  height: 35px;
+  width: clamp(40px, 50vw, 900px);
 }
 
 .dashboard {
@@ -27,6 +33,7 @@ input {
   width: 230px;
   position: fixed;
   background-color: #40A2D8;
+  color: white;
 }
 
 .search {
@@ -34,6 +41,7 @@ input {
   grid-column: 2/4;
   display: flex;
   justify-content: space-between;
+  align-content: center;
   padding-left: 25px;
   padding-right: 100px;
 }
@@ -54,6 +62,7 @@ input {
   display: flex;
   align-items: center;
   gap: 15px;
+  filter: brightness(0) invert(1);
 }
 
 .dbimg1 {
@@ -61,14 +70,25 @@ input {
   height: 60px;
 }
 
-.dbimg, .srimg {
+.dbimg {
   width: 35px;
   height: 35px;
+}
+
+.srimg {
+  height: 25px;
+  width: 25px;
 }
 
 .userimgsmall {
   height: 50px;
   width: 50px;
+  border-radius: 25px;
+}
+
+.username {
+  font-weight: 600;
+  font-size: large;
 }
 
 .projects {
@@ -86,6 +106,8 @@ input {
 .user {
   grid-row: 2/3;
   grid-column: 2/4;
+  box-shadow: 0px 4px 3px 0px rgba(0, 0, 0, 0.25);
+  z-index: 1;
 }
 
 .trending {
@@ -96,6 +118,13 @@ input {
 .announcement {
   grid-row: 3/5;
   grid-column: 3/4;
+}
+
+.btn_search {
+  all: unset;
+  background-color: white;
+  border-radius: 30px;
+  border-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

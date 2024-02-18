@@ -2,6 +2,11 @@
     margin:0;
     padding:0;
 }
+@font-face {
+    font-family: 'Raleway';
+    font-weight: 400;
+    src: url('assets/Raleway-Regular.woff') format('woff');
+}
 body{
     display: grid;
     grid-template-columns: 250px 1fr 350px;
@@ -10,6 +15,7 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
+    //height needs to be auto by the end
 }
 input{
     all:unset;
@@ -43,7 +49,7 @@ input{
     justify-content: space-between;
     align-content: center;
 
-    padding-left: 25px;
+    padding-left: 35px;
     padding-right: 100px;
 }
 .search>*{
@@ -82,6 +88,7 @@ input{
 .username{
     font-weight: 600;
     font-size: large;
+    font-family: "Raleway";
 }
 .projects{
     grid-row: 4/6;
@@ -97,8 +104,16 @@ input{
     grid-row: 2/3;
     grid-column: 2/4;
 
+    background-color: white;
     box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.25);
     z-index: 1;
+
+    display: flex;
+    justify-content: space-between;
+    padding-left: 35px;
+    padding-right: 100px;
+    position:sticky;
+    top:0;
 }
 .trending{
     grid-row:5/6;
@@ -114,4 +129,44 @@ input{
     border-radius: 30px;
     border-color: white;
 }
-
+.userimg{
+    width:75px;
+    height:75px;
+    border-radius: 50px;
+}
+.user{
+    .uleft{
+        display: flex;
+        gap:20px;
+        align-items: center;
+    }
+    .uright{
+        display: flex;
+        gap:30px;
+        align-items: center;
+    }
+}
+.paral{
+    
+    .p1{
+        font-weight: 700;
+        margin-bottom: 8px;
+        font-family: "Raleway";
+    }
+    .p2{
+        font-weight: 700;
+        font-size: 20px;
+        font-family: "Raleway";
+    }
+}
+.userbtn{
+    all:unset;
+    background-color: #40A2D8;
+    color:white;
+    width:125px;
+    height:40px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+}

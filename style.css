@@ -27,6 +27,10 @@ input {
   width: clamp(40px, 50vw, 900px);
 }
 
+hr {
+  margin: 4px 0;
+}
+
 .dashboard {
   grid-row: 1/6;
   grid-column: 1/2;
@@ -128,11 +132,6 @@ input {
   grid-column: 3/4;
 }
 
-.announcement {
-  grid-row: 3/5;
-  grid-column: 3/4;
-}
-
 .btn_search {
   all: unset;
   background-color: white;
@@ -157,12 +156,13 @@ input {
   align-items: center;
 }
 
-.paral .p1 {
+.p1 {
   font-weight: 700;
   margin-bottom: 8px;
   font-family: "Raleway";
 }
-.paral .p2 {
+
+.p2, .p3, .p4, .project {
   font-weight: 700;
   font-size: 20px;
   font-family: "Raleway";
@@ -178,6 +178,36 @@ input {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
+}
+
+.p3 {
+  padding: 15px 0 15px 15px;
+}
+
+.announcement {
+  grid-row: 3/5;
+  grid-column: 3/4;
+  background-color: #dcdcdc;
+}
+
+.ann_body {
+  width: 300px;
+  height: 75%;
+  background-color: white;
+  margin-left: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.25);
+  padding: 10px 15px;
+}
+
+.p5 {
+  width: 275px;
+  font-size: 12px;
+  font-family: "Raleway";
+  line-height: 1em;
+  height: 4.8em;
+  overflow: hidden;
+  padding: 4px 0;
 }
 
 /*# sourceMappingURL=style.css.map */
